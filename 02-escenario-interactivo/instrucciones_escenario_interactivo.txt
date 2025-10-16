@@ -1,0 +1,8 @@
+- Dimensiones: 
+  W: 750px
+  H: 500px
+
+- Posición absolute, relative, top, left, right, bottom
+- 6 assets en png (2 animables y 4 clickeables)
+- Imagen de fondo
+- Asignar clases a todos los elementos HTML
