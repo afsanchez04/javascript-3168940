@@ -1,6 +1,171 @@
+body {
+    background-color: blueviolet;
+}
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(89, 210, 170);
+    text-align: center;
+    text-shadow: 2px 2px violet;
+}
+
+#caja {
+    border: solid;
+}
+
+#fondo  {
+    background-image: url(fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin: auto;
+    width: 750px;
+    height: 500px;
+    border: solid 3px violet;
+}
+
+#fondo:hover {
+  cursor: url("bob.png") 20 20, auto;
+}
+
+#medusa1 {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 130px;
+    height: auto;
+  /*  transition: 0.5s;
+     animation: moverMedusa 3s ease-in-out infinite alternate;
+ */}
+
+@keyframes moverMedusa {
+    0% {
+        transform: translateY(-20);
+    }
+    100% {
+        transform: translateY(20px);
+    }
+}
+
+
+#medusa2 {
+    position: absolute;
+    top: 280px;
+    left: 200px;
+    width: 130px;
+    height: auto;
+    transition: 0.5s;
+/*     animation: moverMedusa_ 3s ease-in-out infinite alternate;
+ */}
+
+@keyframes moverMedusa_ {
+    0% {
+        transform: translateX(-20);
+    }
+    100% {
+        transform: translateX(20px);
+    }
+}
+
+#medusa3 {
+    position: absolute;
+    top: 40px;
+    left: 360px;
+    width: 130px;
+    height: auto;
+    transition: 0.5s;
+/*     animation: moverMedusa 3s ease-in-out infinite alternate;
+ */}
+
+#medusa4 {
+    position: absolute;
+    top: 280px;
+    left: 520px;
+    width: 130px;
+    height: auto;
+    transition: 0.5s;
+/*     animation: moverMedusa_ 3s ease-in-out infinite alternate;
+ */}
+
+.desaparecer {
+  transform: scale(0); 
+  opacity: 0;          
+}
+
+#medusa1:hover,
+#medusa2:hover,
+#medusa3:hover,
+#medusa4:hover {
+    transform: scale(1.2);
+}
+
+#alga {
+    position: absolute;
+    top: 300px;
+    left: 520px;
+    width: 130px;
+    height: auto;
+    transform-origin: center;
+/*     animation: rotarSuave 1.5s infinite ease-in-out alternate;
+ */}
+
+@keyframes rotarSuave {
+    0% {
+        transform: rotate(-20deg);
+    }
+    100% {
+        transform: rotate(20deg);
+    }
+}
+
+#burbuja {
+    position: absolute;
+    top: 150px;
+    left: 200px;
+    width: 130px;
+    height: auto;
+/*     animation: moverBurbuja 3s ease-in-out infinite alternate;
+ */}
+
+.moverBurbuja{
+    animation: moverBurbuja 4s linear infinite alternate;
+}
+
+@keyframes moverBurbuja {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-40px);
+    }
+}
+
+#contador {
+  width: 130px;
+  margin: 15px auto;
+  padding: 10px;
+  background-color: rgba(127, 0, 255, 0.3);
+  border: 3px solid violet;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 10px;
+}
+
+#contador.activo {
+  transform: scale(1.1);
+}
+
+
+
+/* Animación desaparece medusa */
+
+.saltar{
+    animation: salto 0.6s ease forwards;
+}
+@keyframes salto {
+    0%{transform: translateY(0); opacity: 1;}
+    30%{transform: translateY(-60px);}
+    100%{transform: translateY(0); opacity: 0;}
 }
