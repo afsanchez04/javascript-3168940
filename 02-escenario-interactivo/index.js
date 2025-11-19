@@ -7,7 +7,16 @@ console.log(jell, tablero)
 
 //2. Funciones
 jell.forEach( item => {
-  console.log("Medusas", item)
+  
+
+  item.addEventListener("click", () => {
+    item.style.filter = "grayscale(1)"
+    item.classList.add("saltar")
+    counter++
+    tablero.textContent = counter
+  })
+
+
 } )
 
 
